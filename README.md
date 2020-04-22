@@ -4,7 +4,7 @@ Video Stream React Redux App
 --------
 [new Google APIs project](https://console.developers.google.com/projectcreate)
 
-[setup OAuth](https://console.cloud.google.com/apis/credentials)
+[setup OAuth client](https://console.developers.google.com/apis/credentials/oauthclient)
 
 --------
 
