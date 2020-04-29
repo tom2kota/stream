@@ -15,7 +15,7 @@ Video Stream React Redux App
     componentDidMount() {
         window.gapi.load('client:auth2', () => {
                 window.gapi.client.init({
-                        clientId: '***********-***********************************.apps.googleusercontent.com',
+                        clientId: '***********-*****************************.apps.googleusercontent.com',
                         scope: 'email'
                     }
                 )
@@ -25,6 +25,10 @@ Video Stream React Redux App
  ```
 --------
 
-*[Authorizing and Making Authorized Requests](https://github.com/google/google-api-javascript-client/blob/master/docs/samples.md#authorizing-and-making-authorized-requests) 
+* [Semples / Authorizing and Making Authorized Requests](https://github.com/google/google-api-javascript-client/blob/master/docs/samples.md#authorizing-and-making-authorized-requests) 
+
+** [Methods and Classes / Google API Client LIbrary for Javascript](https://github.com/google/google-api-javascript-client/blob/master/docs/reference.md)
+
+---------
 
 [Deep Space House](https://youtu.be/P15NtXKEM-w?t=4427)
