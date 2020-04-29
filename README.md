@@ -25,4 +25,6 @@ Video Stream React Redux App
  ```
 --------
 
+*[Authorizing and Making Authorized Requests](https://github.com/google/google-api-javascript-client/blob/master/docs/samples.md#authorizing-and-making-authorized-requests) 
+
 [Deep Space House](https://youtu.be/P15NtXKEM-w?t=4427)
