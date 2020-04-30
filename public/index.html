@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta
+            name="description"
+            content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+    <title>Video Stream - React App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/>
+    <script src="https://apis.google.com/js/api.js"></script>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<div>
+    <hr/>
+    <h1>Video Stream React Redux App</h1>
+    <p>App is similar to <a href="https://www.twitch.tv/">Twitch</a></p>
+    <hr/>
+    <p>[ Streamer&#39;s comp (Open Broadcaster Software - OBS) ]</p>
+    <p>&#8681; &nbsp; (Video stream + stream key) &nbsp; &#8681;</p>
+    <p>[ Real time messaging protocol (RTMP) server ]</p>
+    <p>&#8681; &nbsp; (Video feed) &nbsp; &#8681;</p>
+    <p>[ Viewer&#39;s browser #1 ]</p>
+    <p>[ Viewer&#39;s browser #2 ]</p>
+    <p>[ Viewer&#39;s browser #3 ]</p>
+    <hr/>
+
+    <p>[ Streamer&#39;s comp (Open Broadcaster Software - OBS) ]</p>
+    <p>&#8681; &nbsp; (Video feed) &nbsp; &#8681;</p>
+    <p>[ Real time messaging protocol (RTMP) server ]</p>
+    <p>&#8681; &nbsp; (Request of [ Viewer&#39;s browser #1 ] to get Video feed) &nbsp; &#8681;</p>
+    <p>[ Web server that knows which streams are currently broadcasting ]</p>
+    <p>&#8681; &nbsp; (Response with Video feed URL) &nbsp; &#8681;</p>
+    <p>[ Viewer&#39;s browser #1 ]</p>
+    <hr/>
+
+    <h4>GAPI Auth 2 with Redux v.1</h4>
+    <p>[ Redux Store (Auth State) ]</p>
+    <p>&#8681; &nbsp; ( isSignedIn: true/false ) &nbsp; &#8681;</p>
+    <p>[ GoogleAuth Component ( onSignInClick() / onSignOutClick() )]</p>
+    <p>&#8681; &nbsp; &nbsp; &#8681;</p>
+    <p>[ GAPI Auth2 ]</p>
+    <p>&#8681; &nbsp; &nbsp; &#8681;</p>
+    <p>[ GoogleAuth Component ( onAuthChange() )]</p>
+    <p>&#8681; &nbsp; &nbsp; &#8681;</p>
+    <p>[ Action Creators ( signIn() / signOut() )]</p>
+    <p>&#8681; &nbsp; &nbsp; &#8681;</p>
+    <p>[ Redux Store (Auth State) ]</p>
+    <hr/>
+
+    <h4>GAPI Auth 2 with Redux v.2 (follow Redux convention)</h4>
+    <p>[ Redux Store (Auth State) ]</p>
+    <p>&#8681; &nbsp; ( isSignedIn: true/false ) &nbsp; &#8681;</p>
+    <p>[ GoogleAuth Component ( onSignInClick() / onSignOutClick() )]</p>
+    <p>&#8681; &nbsp; &nbsp; &#8681;</p>
+    <p>[ Action Creators ( trySignIn() / trySignOut() )]</p>
+    <p>&#8681; &nbsp; &nbsp; &#8681;</p>
+    <p>[ GAPI Auth2 ]</p>
+    <p>&#8681; &nbsp; &nbsp; &#8681;</p>
+    <p>[ Action Creators ( changeAuth() )]</p>
+    <p>&#8681; &nbsp; &nbsp; &#8681;</p>
+    <p>[ Redux Store (Auth State) ]</p>
+    <hr/>
+
+</div>
+</body>
+</html>
