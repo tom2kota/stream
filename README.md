@@ -1,5 +1,5 @@
-# stream
-Video Stream React Redux App
+# stream-client
+Client of Video Stream React Redux App
 
 --------
 
@@ -24,6 +24,8 @@ Video Stream React Redux App
     }
  ```
 --------
+
+
 #### references:
 
 [Samples / Authorizing and Making Authorized Requests](https://github.com/google/google-api-javascript-client/blob/master/docs/samples.md#authorizing-and-making-authorized-requests) 
