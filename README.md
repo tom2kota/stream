@@ -39,7 +39,9 @@ Status of [ACTION](https://github.com/tom2kota/stream-client/actions) script (De
 
 1) [documentation](http://extension.remotedev.io/) & [repo](https://github.com/zalmoxisus/redux-devtools-extension)
 
-2) src/index.js
+2) [Chrome Web Store](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) & [Mozilla Add-ons](https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/)
+
+3) src/index.js
 
 ```
 import {createStore, applyMiddleware, compose} from "redux";
