@@ -61,6 +61,11 @@ const store = createStore(
     - http://redux-form.com/6.5.0/examples/simple/
     - https://chvin.github.io/react-tetris/
     
+4) Create debug session & refresh the page:
+    
+    - https://tom2kota.github.io/stream-client/?debug_session=xxx
+    - https://tom2kota.github.io/stream-client/?debug_session=another-session
+
 
 #### references:
 
