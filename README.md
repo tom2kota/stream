@@ -11,6 +11,8 @@ Status of [ACTION](https://github.com/tom2kota/stream-client/actions) script (De
 
 --------
 
+## Auth:
+
 1) [new Google APIs project](https://console.developers.google.com/projectcreate)
 
 2) [setup OAuth client](https://console.developers.google.com/apis/credentials/oauthclient)
@@ -33,6 +35,11 @@ Status of [ACTION](https://github.com/tom2kota/stream-client/actions) script (De
  ```
 --------
 
+## Redux DevTools
+
+1) [documentation](http://extension.remotedev.io/) & [repo](https://github.com/zalmoxisus/redux-devtools-extension)
+
+2) 
 
 #### references:
 
