@@ -39,7 +39,26 @@ Status of [ACTION](https://github.com/tom2kota/stream-client/actions) script (De
 
 1) [documentation](http://extension.remotedev.io/) & [repo](https://github.com/zalmoxisus/redux-devtools-extension)
 
-2) 
+2) src/index.js
+
+```
+import {createStore, applyMiddleware, compose} from "redux";
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(
+    reducers,
+    composeEnhancers(applyMiddleware())
+);
+```
+
+3) Live demos to use the extension with:
+
+    - https://tom2kota.github.io/stream-client/
+    - http://zalmoxisus.github.io/examples/counter/
+    - https://github.com/zalmoxisus/redux-devtools-extension/tree/master/examples
+    - http://redux-form.com/6.5.0/examples/simple/
+    - https://chvin.github.io/react-tetris/
+    
 
 #### references:
 
