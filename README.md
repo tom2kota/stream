@@ -77,6 +77,6 @@ const store = createStore(
 
 [React Router Training](https://reacttraining.com/react-router/core/guides/quick-start)
 
----------
+[Redux Form Synchronous Validation Example](https://redux-form.com/8.3.0/examples/syncvalidation/)
 
 [Deep Space House](https://youtu.be/P15NtXKEM-w?t=4427)
