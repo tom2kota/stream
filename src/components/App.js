@@ -50,6 +50,13 @@ const App = () => (
                     <li><Link to="/streams/delete">Delete Stream</Link></li>
                     <li><Link to="/streams/show">Show Stream</Link></li>
                 </ul>
+                <ul>
+                    <li><Link to={process.env.PUBLIC_URL + '/'}>List of Streams</Link></li>
+                    <li><Link to={process.env.PUBLIC_URL + '/streams/new'}>Create New Stream</Link></li>
+                    <li><Link to={process.env.PUBLIC_URL + '/streams/edit'}>Edit Stream</Link></li>
+                    <li><Link to={process.env.PUBLIC_URL + '/streams/delete'}>Delete Stream</Link></li>
+                    <li><Link to={process.env.PUBLIC_URL + '/streams/show'}>Show Stream</Link></li>
+                </ul>
             </div>
         </BrowserRouter>
     </div>
