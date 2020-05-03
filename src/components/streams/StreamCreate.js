@@ -16,7 +16,7 @@ class StreamCreate extends Component {
 
     // TypeError: this is undefined  ... {this.renderError(meta)} ... FIX: use Arrow function
     renderInput = ({input, label, meta}) => {
-        console.log('renderInput({meta}) props ... :  ', meta)
+        // console.log('renderInput({meta}) props ... :  ', meta)
         // console.log('renderInput(formProps) props ... :  ', formProps)
         const className = `field ${meta.error && meta.touched ? 'error' : ''}`
 
@@ -37,7 +37,7 @@ class StreamCreate extends Component {
     }
 
     render() {
-        console.log('this.props.form: ', this.props.form)
+        // console.log('this.props.form: ', this.props.form)
         return (
             <form className="ui form error" onSubmit={this.props.handleSubmit(this.onSubmit)}>
                 <h1>{this.props.form}</h1>
@@ -50,7 +50,7 @@ class StreamCreate extends Component {
 }
 
 const validate = (valueInput) => {
-    console.log('!!!VALIDATE!!!')
+    // console.log('!!!VALIDATE!!!')
     const errors = {}
 
     if (!valueInput.title) {
