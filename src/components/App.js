@@ -1,5 +1,6 @@
 import React from "react";
-import {HashRouter, Link, BrowserRouter, Route} from "react-router-dom";
+import {HashRouter, Link, Route} from "react-router-dom";
+// import {BrowserRouter, Link, Route} from "react-router-dom";
 import StreamList from "./streams/StreamList";
 import StreamCreate from "./streams/StreamCreate";
 import StreamEdit from "./streams/StreamEdit";
