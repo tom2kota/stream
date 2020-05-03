@@ -67,11 +67,15 @@ const store = createStore(
     - https://tom2kota.github.io/stream-client/?debug_session=another-session
 
 
+------------
+
 #### references:
 
 [Samples / Authorizing and Making Authorized Requests](https://github.com/google/google-api-javascript-client/blob/master/docs/samples.md#authorizing-and-making-authorized-requests) 
 
 [Methods and Classes / Google API Client LIbrary for Javascript](https://github.com/google/google-api-javascript-client/blob/master/docs/reference.md)
+
+[React Router Training](https://reacttraining.com/react-router/core/guides/quick-start)
 
 ---------
 
