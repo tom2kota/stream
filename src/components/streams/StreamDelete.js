@@ -1,5 +1,16 @@
-import React from "react";
+import React, {Component} from "react";
+import {reduxForm} from "redux-form";
 
-const StreamDelete = () => <div>StreamDelete</div>
+class StreamDelete extends Component {
 
-export default StreamDelete
+    render() {
+        return (
+            <div>StreamDelete</div>
+        )
+    }
+}
+
+
+export default reduxForm({
+    form: 'StreamDelete'
+})(StreamDelete)
