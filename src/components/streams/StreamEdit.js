@@ -95,5 +95,5 @@ const validate = (valueInput) => {
 }
 
 export default reduxForm({
-    form: 'StreamEdit', validate
+    form: 'StreamEdit', validate: validate
 })(StreamEdit)
