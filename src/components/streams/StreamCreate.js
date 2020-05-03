@@ -14,19 +14,15 @@ class StreamCreate extends Component {
 
     }
 
-    // TypeError: this is undefined  ... {this.renderError(meta)} ... FIX: use Arrow function
     renderInput = ({input, label, meta}) => {
-        // console.log('renderInput({meta}) props ... :  ', meta)
-        // console.log('renderInput(formProps) props ... :  ', formProps)
+
         const className = `field ${meta.error && meta.touched ? 'error' : ''}`
 
         return (
-            // <input name={formProps2.input.name} value={formProps.input.value}/>
-            // <input {...formProps.input} />
+
             <div className={className}>
                 <label>{label}</label>
                 <input {...input} autoComplete="off"/>
-                {/*<div>{meta.error}</div>*/}
                 {this.renderError(meta)}
             </div>
         )
@@ -37,7 +33,7 @@ class StreamCreate extends Component {
     }
 
     render() {
-        // console.log('this.props.form: ', this.props.form)
+
         return (
             <form className="ui form error" onSubmit={this.props.handleSubmit(this.onSubmit)}>
                 <h1>{this.props.form}</h1>
@@ -50,7 +46,7 @@ class StreamCreate extends Component {
 }
 
 const validate = (valueInput) => {
-    // console.log('!!!VALIDATE!!!')
+
     const errors = {}
 
     if (!valueInput.title) {
