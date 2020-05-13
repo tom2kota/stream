@@ -11,6 +11,38 @@ Status of [ACTION](https://github.com/tom2kota/stream-client/actions) script (De
 
 --------
 
+## Node.js & npm install
+
+
+```
+npm install npm -g
+npm update
+npm i axios react-redux redux redux-form redux-thunk react-router-dom 
+npm audit fix
+```
+
+[How To Install Node.js on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04)
+
+```
+cd ~
+curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
+nano nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt install nodejs
+node -v
+curl -L https://www.npmjs.com/install.sh | sh
+npm_config_prefix=/some/path sh install.sh
+npm -v
+```
+
+node -v && npm -v
+```
+v14.2.0
+6.14.4
+```
+
+
+
 ## Auth:
 
 1) [new Google APIs project](https://console.developers.google.com/projectcreate)
