@@ -112,3 +112,5 @@ const store = createStore(
 [Redux Form Synchronous Validation Example](https://redux-form.com/8.3.0/examples/syncvalidation/)
 
 [Deep Space House](https://youtu.be/P15NtXKEM-w?t=4427)
+
+[Liquid Funk](https://youtu.be/_5HeEzKHTAc?t=3145)
