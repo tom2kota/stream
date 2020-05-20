@@ -5,10 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="theme-color" content="#000000"/>
-    <meta
-            name="description"
-            content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Video Stream React Redux App created using create-react-app"/>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
     <title>Video Stream - React App</title>
@@ -18,11 +15,27 @@
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>
-<div>
+<div id="modal"></div>
+<div style="padding: 50px 20px; margin-top: 500px; background-color: #cfefd3;">
+
     <hr/>
-    <h1>Video Stream React Redux App</h1>
-    <p>App is similar to <a href="https://www.twitch.tv/">Twitch</a></p>
+    <h1>Video Stream {React Redux App}</h1>
+    <p>App is similar to <a href="https://www.twitch.tv/" target="_blank">Twitch</a></p>
     <hr/>
+
+    <h2>REPOS:</h2>
+    <p><a href="https://github.com/tom2kota/stream-client" target="_blank">Client of Video Stream</a></p>
+    <p><a href="https://github.com/tom2kota/stream-server" target="_blank">JSON server for stream-client</a></p>
+    <p><a href="https://github.com/tom2kota/stream-rtmp" target="_blank">Node Media Server package & RTMP Server</a></p>
+    <hr/>
+
+    <h2>DEMOS:</h2>
+    <p><a href="https://tom2kota.github.io/stream-client/" target="_blank">Client of Video Stream</a></p>
+    <p><a href="https://stream-json-server.herokuapp.com/" target="_blank">JSON server for stream-client</a></p>
+    <p><a href=" " target="_blank">Node Media Server package & RTMP Server</a></p>
+    <hr/>
+
+    <h2>App Structure:</h2>
     <p>[ Streamer&#39;s comp (Open Broadcaster Software - OBS) ]</p>
     <p>&#8681; &nbsp; (Video stream + stream key) &nbsp; &#8681;</p>
     <p>[ Real time messaging protocol (RTMP) server ]</p>
@@ -41,7 +54,7 @@
     <p>[ Viewer&#39;s browser #1 ]</p>
     <hr/>
 
-    <h4>GAPI Auth 2 with Redux v.1</h4>
+    <h3>GAPI Auth 2 with Redux v.1</h3>
     <p>[ Redux Store (Auth State) ]</p>
     <p>&#8681; &nbsp; ( isSignedIn: true/false ) &nbsp; &#8681;</p>
     <p>[ GoogleAuth Component ( onSignInClick() / onSignOutClick() )]</p>
@@ -55,7 +68,7 @@
     <p>[ Redux Store (Auth State) ]</p>
     <hr/>
 
-    <h4>GAPI Auth 2 with Redux v.2 (follow Redux convention)</h4>
+    <h3>GAPI Auth 2 with Redux v.2 (follow Redux convention)</h3>
     <p>[ Redux Store (Auth State) ]</p>
     <p>&#8681; &nbsp; ( isSignedIn: true/false ) &nbsp; &#8681;</p>
     <p>[ GoogleAuth Component ( onSignInClick() / onSignOutClick() )]</p>
@@ -68,6 +81,31 @@
     <p>&#8681; &nbsp; &nbsp; &#8681;</p>
     <p>[ Redux Store (Auth State) ]</p>
     <hr/>
+
+    <h3>EDIT & DELETE buttons selection concepts:</h3>
+    <p>[ Selection Reducer ]</p>
+    <p>( when a user clicks on a stream to edit it, use a selectionReducer to record what stream is being edited ) </p>
+    <p>[ URL-based selection]</p>
+    <p>( put the ID of the stream being edited in the URL )</p>
+    <p>( when we use React Router DOM with a specific URL paths with variable /:id pass as a prop )</p>
+    <p>( Router renders Edit & Delete components with new props: match.params.id )</p>
+    <p>( we can use some params: edit/:id/:userId/:token )</p>
+    <hr/>
+
+    <h3>Node Media Server</h3>
+    <p> we will install the Node Media Server package and create our RTMP server</p>
+    <p><a href="https://github.com/illuspas/Node-Media-Server" target="_blank">github.com Node-Media-Server</a></p>
+    <p><a href="https://www.npmjs.com/package/node-media-server" target="_blank">npmjs.com Node-Media-Server</a></p>
+    <p>npm version (recommended)</p>
+    <p>
+        <code>
+            mkdir nms
+            cd nms
+            npm install node-media-server
+            vi app.js
+        </code>
+    </p>
+    <p>const NodeMediaServer = require('node-media-server');</p>
 
 </div>
 </body>
