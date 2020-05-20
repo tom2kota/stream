@@ -21,3 +21,5 @@ import & init Google API library:
 Authorizing and Making Authorized Requests:
 https://github.com/google/google-api-javascript-client/blob/master/docs/samples.md#authorizing-and-making-authorized-requests
 
+Redux Thunk:
+https://www.digitalocean.com/community/tutorials/redux-redux-thunk
