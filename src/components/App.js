@@ -1,5 +1,3 @@
-// with React-Router, each component needs to be designed to work in isolation (fetch its own data)
-// import {HashRouter, Route, Link} from "react-router-dom";
 import React from "react";
 import {Router, Route, Switch} from "react-router-dom";
 import StreamList from "./streams/StreamList";
@@ -13,27 +11,6 @@ import history from "../history";
 
 const App = () => (
     <div className="ui container">
-        {/*<HashRouter basename="/">*/}
-        {/*    <div>*/}
-        {/*        <Header/>*/}
-        {/*    </div>*/}
-        {/*    <div>*/}
-        {/*        <Route path="/" exact component={StreamList}/>*/}
-        {/*        <Route path="/streams/new" component={StreamCreate}/>*/}
-        {/*        <Route path="/streams/edit" component={StreamEdit}/>*/}
-        {/*        <Route path="/streams/delete/:id" component={StreamDelete}/>*/}
-        {/*        <Route path="/streams/show" component={StreamShow}/>*/}
-        {/*        <hr/>*/}
-        {/*        <ul>*/}
-        {/*            <li><Link to="/">List of Streams</Link></li>*/}
-        {/*            <li><Link to="/streams/new">Create New Stream</Link></li>*/}
-        {/*            <li><Link to="/streams/edit">Edit Stream</Link></li>*/}
-        {/*            <li><Link to="/streams/delete">Delete Stream</Link></li>*/}
-        {/*            <li><Link to="/streams/show">Show Stream</Link></li>*/}
-        {/*        </ul>*/}
-        {/*    </div>*/}
-        {/*</HashRouter>*/}
-
         <Router history={history} basename={process.env.PUBLIC_URL}>
             <div>
                 <Header/>
