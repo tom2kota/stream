@@ -6,7 +6,6 @@ import {fetchStream} from "../../actions";
 class StreamShow extends Component {
 
     componentDidMount() {
-        console.log(this.props)
         this.props.fetchStream(this.props.match.params.id);
     }
 
