@@ -1,50 +1,38 @@
 import React, {Component} from "react";
-import {Field, reduxForm} from "redux-form";
+import _ from "lodash";
+import {connect} from "react-redux";
+import {fetchStream, editStream} from "../../actions";
+import StreamForm from "./StreamForm";
 
 class StreamEdit extends Component {
 
-    renderInput({input, label, meta}) {
-        const className = `field ${meta.error && meta.touched ? 'error' : ''}`
+    componentDidMount() {
+        this.props.fetchStream(this.props.match.params.id)
+    }
 
-        return (
-            <div className={className}>
-                <label>{label}</label>
-                <input {...input} autoComplete="off"/>
-                <div>{meta.error}</div>
+    onSubmit = (formValues) => {
+        this.props.editStream(this.props.match.params.id, formValues)
+    }
+
+    renderList = () =>
+        !this.props.stream ? <div>Loading ... </div> :
+            <div>
+                <h3>Edit a Stream</h3>
+                <StreamForm
+                    initialValues={_.pick(this.props.stream, 'title', 'description', 'userId')}
+                    onSubmit={this.onSubmit}
+                />
             </div>
-        )
-    }
-
-    onSubmit(valueInput) {
-        console.log('onSubmit(valueInput):   ...  ', valueInput)
-    }
 
     render() {
         return (
-            <form className="ui form error" onSubmit={this.props.handleSubmit(this.onSubmit)}>
-                <h1>{this.props.form}</h1>
-                <Field name="title" component={this.renderInput} label="Enter Title"/>
-                <Field name="description" component={this.renderInput} label="Enter Description"/>
-                <button className="ui button primary">Submit</button>
-            </form>
+            <div>
+                {this.renderList()}
+            </div>
         )
     }
 }
 
-const validate = (valueInput) => {
-    const errors = {}
+const mapStateToProps = (state, ownProps) => ({stream: state.stream[ownProps.match.params.id]})
 
-    if (!valueInput.title) {
-        errors.title = 'You must enter a title'
-    }
-
-    if (!valueInput.description) {
-        errors.description = 'You must enter a description'
-    }
-
-    return errors
-}
-
-export default reduxForm({
-    form: 'StreamEdit', validate: validate
-})(StreamEdit)
+export default connect(mapStateToProps, {fetchStream, editStream})(StreamEdit)
