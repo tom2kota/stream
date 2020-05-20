@@ -23,7 +23,7 @@ export const signOut = () => {
     }
 }
 
-// TODO: apply Owner Authorization to createStream
+
 export const createStream = formValues => async (dispatch, getState) => {
     const {userId} = getState().auth;
     const response = await streams.post('/streams', {...formValues, userId});
@@ -41,17 +41,12 @@ export const fetchStream = (streamId) => async dispatch => {
     dispatch({type: FETCH_STREAM, payload: response.data})
 }
 
-export const editStream = (streamId, formValues) => async (dispatch, getState) => {
-    const {userId} = getState().auth;
-    const validOwner = formValues.userId === userId && userId !== null;
-    (validOwner) ? dispatch({
-        type: EDIT_STREAM,
-        payload: (await streams.patch(`/streams/${streamId}`, formValues)).data
-    }) : console.log('Validate Owner Error!');
+export const editStream = (streamId, formValues) => async dispatch => {
+    const response = await streams.patch(`/streams/${streamId}`, formValues);
+    dispatch({type: EDIT_STREAM, payload: response.data});
     plainRouterHistory.push('/')
 }
 
-// TODO: apply Owner Validation to deleteStream
 export const deleteStream = (streamId) => async dispatch => {
     await streams.delete(`/streams/${streamId}`);
     dispatch({type: DELETE_STREAM, payload: streamId});
