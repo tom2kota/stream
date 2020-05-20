@@ -26,9 +26,6 @@ class StreamDelete extends Component {
 
 
     render() {
-        console.log('this.props.match.params.id', this.props.match.params.id);
-        console.log('this.props', this.props);
-
         return (
             <Modal
                 title="Delete Stream"
