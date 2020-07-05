@@ -1,10 +1,13 @@
 # stream-client
 Client of Video Stream React Redux App
 
-[DEMO](https://tom2kota.github.io/stream-client/)
+[DEMO on GitHub Pages](https://tom2kota.github.io/stream-client/)
+
+[DEMO on Vercel](https://stream-client.now.sh/)
 
 
 --------
+
 Status of [ACTION](https://github.com/tom2kota/stream-client/actions) script (Deployment):
 
 ![React_App_Deploy_to_gh-pages_CI](https://github.com/tom2kota/stream-client/workflows/React_App_Deploy_to_gh-pages_CI/badge.svg)
